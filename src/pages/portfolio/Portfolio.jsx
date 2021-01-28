@@ -6,7 +6,7 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
-import projects from "../../data.json";
+import projects from "../../projects.json";
 import Card from "../../components/Card/Card";
 
 
@@ -61,6 +61,10 @@ export default function ScrollableTabsButtonAuto() {
   };
 
   return (
+      <>
+      <div>
+<h1 type="text" style={{textAlign: "center"}}>Projects</h1>
+      </div>
     <div className={classes.root}>
       <AppBar position="static" color="default">
         <Tabs
@@ -94,5 +98,6 @@ export default function ScrollableTabsButtonAuto() {
       ))}
       
     </div>
+    </>
   );
 }

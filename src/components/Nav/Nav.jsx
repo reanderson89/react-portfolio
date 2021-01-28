@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -31,13 +31,22 @@ export default function ButtonAppBar() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" className={classes.title}>
-            News
+            Robert Anderson
           </Typography>
           <Button color="inherit">
-          <NavLink to="/portfolio" >
-          Portfolio
-          
-          </NavLink>
+            <NavLink to="/portfolio" style={{ textDecoration: 'none', color: "white" }}>
+                Portfolio
+            </NavLink>
+          </Button>
+          <Button color="inherit">
+            <NavLink to="/about" style={{ textDecoration: 'none', color: "white" }}>
+                About
+            </NavLink>
+          </Button>
+          <Button color="inherit">
+            <NavLink to="/contact" style={{ textDecoration: 'none', color: "white" }}>
+                Contact
+            </NavLink>
           </Button>
         </Toolbar>
       </AppBar>
