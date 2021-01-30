@@ -8,9 +8,14 @@ import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import projects from "../../projects.json";
 import Card from "../../components/Card/Card";
+import Grid from '@material-ui/core/Grid';
+
+
+
 
 
 function TabPanel(props) {
+
   const { children, value, index, ...other } = props;
 
   return (
@@ -48,7 +53,6 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     width: '100%',
     backgroundColor: theme.palette.background.paper,
-    justifyContent: "center",
   },
 }));
 
@@ -61,18 +65,21 @@ export default function ScrollableTabsButtonAuto() {
   };
 
   return (
-      <>
-      <div>
-<h1 type="text" style={{textAlign: "center"}}>Projects</h1>
-      </div>
+      <Grid container zeroMinWidth alignContent="stretch" wrap="wrap">
+      <Grid item xs={12}>
+<Typography variant="h3" className={classes.root} style={{textAlign: "center", color: "white", paddingTop: 10, paddingBottom: 10}} >
+Projects
+          </Typography>
+          </Grid>
     <div className={classes.root}>
-      <AppBar position="static" color="default">
+      <Grid item xs={12}>
+      <AppBar position="static" color="secondary">
         <Tabs
           value={value}
           onChange={handleChange}
           indicatorColor="primary"
           textColor="primary"
-        //   variant="scrollable"
+          variant="scrollable"
           scrollButtons="auto"
           aria-label="scrollable auto tabs example"
           centered
@@ -82,22 +89,27 @@ export default function ScrollableTabsButtonAuto() {
            ))} 
         </Tabs>
       </AppBar>
+      </Grid>
+      <Grid item xs={12}>
       {projects.map((project, i) => (
         <TabPanel  
         className={classes.panel} 
         value={value} 
         index={i}>
             <Card
+            color="primary"
             key={project.id}
                 title={project.title} 
                repo={project.repository} 
                link={project.liveLink} 
-               description={project.description}  />
+               description={project.description} 
+               image={project.image} />
          </TabPanel>
         
       ))}
-      
+      </Grid>
     </div>
-    </>
+    </Grid>
   );
+
 }

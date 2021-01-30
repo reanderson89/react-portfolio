@@ -8,9 +8,10 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
+
 const useStyles = makeStyles({
   root: {
-    maxWidth: 345,
+    maxWidth: 500,
     justifyContent: "center",
         alignItems: "center",
         textAlign: "center",
@@ -18,22 +19,22 @@ const useStyles = makeStyles({
         marginRight: "auto",
   },
   media: {
-    height: 140,
+    height: 300,
   },
 });
 
-export default function MediaCard({title, repo, link, description}) {
+export default function MediaCard({title, repo, link, description, image, color}) {
   const classes = useStyles();
 
   return (
-    <Card className={classes.root}>
-      <CardActionArea>
+    <Card className={classes.root} style={{backgroundColor: "grey"}}>
+      <CardActionArea color={color}>
         <CardMedia
           className={classes.media}
-          image="/static/images/cards/contemplative-reptile.jpg"
+          image={image}
           title={title}
         />
-        <CardContent>
+        <CardContent color={color}>
           <Typography gutterBottom variant="h5" component="h2">
             {title}
           </Typography>
@@ -42,7 +43,7 @@ export default function MediaCard({title, repo, link, description}) {
           </Typography>
         </CardContent>
       </CardActionArea>
-      <CardActions>
+      <CardActions style={{backgroundColor: "black"}}>
         <Button size="small" color="primary" href={repo} target="_blank">
           GitHub Repository
         </Button>

@@ -1,42 +1,48 @@
 [{
     "id": 1,
     "title": "BarkMatch",
-    "repository": "",
-    "liveLink": "",
-    "description": ""
+    "image": "/assets/images/BarkMatchMobile.gif",
+    "repository": "https://github.com/reanderson89/BarkMatch-project2",
+    "liveLink": "https://vast-river-69240.herokuapp.com/",
+    "description": "Words and words and words and words and words"
     },
     {
       "id": 2,
       "title": "Search-U",
-      "repository": "",
-      "liveLink": "",
-      "description": ""
-      },
+      "image": "/assets/images/largerGifs/searchUcomp.gif",
+      "repository": "https://github.com/reanderson89/searchu-project1",
+      "liveLink": "https://reanderson89.github.io/searchu-project1/",
+      "description": "Words and words and words and words and words"
+    },
     {
       "id": 3,
       "title": "Employee Directory",
-      "repository": "",
-      "liveLink": "",
-      "description": ""
-      },
+      "image": "/assets/images/largerGifs/emp-dir.gif",
+      "repository": "https://github.com/reanderson89/employee-directory",
+      "liveLink": "https://reanderson89.github.io/employee-directory/",
+      "description": "Words and words and words and words and words"
+    },
     {
       "id": 4,
       "title": "Weather Dashboard",
-      "repository": "",
-      "liveLink": "",
-      "description": ""
-      },
+      "image": "/assets/images/largerGifs/weatherDB.gif",
+      "repository": "https://github.com/reanderson89/weather-dashboard",
+      "liveLink": "https://reanderson89.github.io/weather-dashboard/",
+      "description": "Words and words and words and words and words"
+    },
     {
       "id": 5,
       "title": "Note Taker",
-      "repository": "",
-      "liveLink": "",
-      "description": ""
-      },
+      "image": "/assets/images/largerGifs/note-taker.gif",
+      "repository": "https://github.com/reanderson89/note-taker",
+      "liveLink": "https://limitless-cliffs-83798.herokuapp.com/notes",
+      "description": "Words and words and words and words and words"
+    },
     {
       "id": 6,
-      "title": "Readme Generator",
-      "repository": "",
-      "liveLink": "",
-      "description": ""
+      "title": "Daily Planner",
+      "image": "/assets/images/largerGifs/planner.gif",
+      "repository": "https://github.com/reanderson89/work-day-scheduler",
+      "liveLink": "https://reanderson89.github.io/work-day-scheduler/",
+      "description": "Words and words and words and words and words"
       }]
