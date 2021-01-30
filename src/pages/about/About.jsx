@@ -1,7 +1,8 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
-import { Typography } from '@material-ui/core';
+import { Typography, CardMedia } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
+
 
 
 const aboutMe = `After coaching Crossfit for roughly 8 years I wanted to try and
@@ -35,6 +36,10 @@ const useStyles = makeStyles((theme) => ({
     },
     typo: {
         color: "lightgrey"
+    },
+    media: {
+        height: 250,
+        maxWidth:250
     }
   }));
 const About = ({color}) => {
@@ -43,16 +48,21 @@ const About = ({color}) => {
     return (
     <Grid container  alignContent="center" className={classes.root}>
         <Grid container spacing={2}>
-            <Grid item sm={4}>
-                <Typography variant="h3">Image goes here</Typography>
+            <Grid item sm={4} xs={6}>
+            <CardMedia
+    className={classes.media}
+    image="/assets/images/githubPhoto.jpeg"
+    title="Robert Anderson"
+/>
             </Grid>
-            <Grid item sm={8}>
+            <Grid item style={{marginTop: 16}} sm={8} xs={6}>
                 <Typography align="justify" variant="p" paragraph className={classes.typo}>{aboutMe}
                     </Typography> 
             </Grid>
+            
         </Grid>
         <Grid container justify="flex-end">
-            <Grid item sm={8}>
+            <Grid item sm={8} xs={6}>
                 <Typography align="justify" variant="p" paragraph className={classes.typo}>{aboutMeCont}
                     </Typography> 
             </Grid>
