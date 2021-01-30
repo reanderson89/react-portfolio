@@ -9,6 +9,7 @@ import Box from '@material-ui/core/Box';
 import projects from "../../projects.json";
 import Card from "../../components/Card/Card";
 import Grid from '@material-ui/core/Grid';
+import { spacing } from '@material-ui/system'
 
 
 
@@ -65,6 +66,7 @@ export default function ScrollableTabsButtonAuto() {
   };
 
   return (
+    <Box>
       <Grid container zeroMinWidth alignContent="stretch" wrap="wrap">
       <Grid item xs={12}>
 <Typography variant="h3" className={classes.root} style={{textAlign: "center", color: "white", paddingTop: 10, paddingBottom: 10}} >
@@ -110,6 +112,7 @@ Projects
       </Grid>
     </div>
     </Grid>
+    </Box>
   );
 
 }
