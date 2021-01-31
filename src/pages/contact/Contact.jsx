@@ -24,7 +24,7 @@ const Contact = () => {
               <li class="contact-list">Resume:</li><a href="./assets/robert-anderson-resume.pdf" download="Robert Anderson's Resume"target="_blank">Download</a>
             </Typography> */}
             
-                <Grid container spacing={2} alignItems="center">
+                <Grid container spacing={2} alignItems="center" justify="center">
                         <Grid item sm={4} md={4} xs={8} style={{marginTop:16}}>
                         <Card>
                             <Typography variant="h4"><PhoneIphoneIcon fontSize="large"/> Phone: </Typography>
@@ -49,7 +49,7 @@ const Contact = () => {
                         </Grid>
                     
                 </Grid>
-                <Grid container spacing={2}>   
+                <Grid container spacing={2} justify="center">   
                         <Grid item sm={6} md={6} xs={8} style={{marginTop:16}}>
                         <Card>
                             <Typography variant="h4"><LinkedInIcon fontSize="large"/> LinkedIn: </Typography>
