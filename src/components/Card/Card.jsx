@@ -30,7 +30,8 @@ export default function MediaCard({title, repo, link, description, image, color}
     <Card className={classes.root} style={{backgroundColor: "grey"}}>
       <CardActionArea color={color}>
         <CardMedia
-          className={classes.media}
+        component="img"
+          height="auto"
           image={process.env.PUBLIC_URL+image}
           title={title}
         />
