@@ -25,41 +25,41 @@ const Contact = () => {
             </Typography> */}
             
                 <Grid container spacing={2} alignItems="center" justify="center">
-                        <Grid item sm={4} md={4} xs={8} style={{marginTop:16}}>
+                        <Grid item sm={4} md={4} xs={10} style={{marginTop:16}}>
                         <Card>
                             <Typography variant="h4"><PhoneIphoneIcon fontSize="large"/> Phone: </Typography>
-                            <Typography variant="h5"><a href="tel:503-927-9423" style={{ textDecoration: 'none', color: "blue" }}>503-927-9423</a></Typography>
+                            <Typography variant="h5"><a href="tel:503-927-9423" style={{ textDecoration: 'none', color: "lightblue" }}>503-927-9423</a></Typography>
                             </Card>
                         </Grid>
                     
                     
-                        <Grid item sm={4} md={4} xs={8} style={{marginTop:16}}>
+                        <Grid item sm={4} md={4} xs={10} style={{marginTop:16}}>
                         <Card>
                             <Typography variant="h4"><EmailIcon fontSize="large"/> Email: </Typography>
-                            <Typography variant="h5"><a href="mailto: reanderson89@gmail.com" style={{ textDecoration: 'none', color: "blue" }}>reanderson89@gmail.com</a></Typography>
+                            <Typography variant="h5"><a href="mailto: reanderson89@gmail.com" style={{ textDecoration: 'none', color: "lightblue" }}>reanderson89@gmail.com</a></Typography>
                             </Card>
                         </Grid>
                     
                     
-                        <Grid item sm={4} md={4} xs={8} style={{marginTop:16}}>
+                        <Grid item sm={4} md={4} xs={10} style={{marginTop:16}}>
                         <Card>
                             <Typography variant="h4"><GitHubIcon fontSize="large"/> GitHub: </Typography>
-                            <Typography variant="h5"><a href="https://github.com/reanderson89" style={{ textDecoration: 'none', color: "blue" }}>@reanderson89</a></Typography>
+                            <Typography variant="h5"><a href="https://github.com/reanderson89" style={{ textDecoration: 'none', color: "lightblue" }}>@reanderson89</a></Typography>
                             </Card>
                         </Grid>
                     
                 </Grid>
                 <Grid container spacing={2} justify="center">   
-                        <Grid item sm={6} md={6} xs={8} style={{marginTop:16}}>
+                        <Grid item sm={6} md={6} xs={10} style={{marginTop:16}}>
                         <Card>
                             <Typography variant="h4"><LinkedInIcon fontSize="large"/> LinkedIn: </Typography>
-                            <Typography variant="h5"><a href="https://www.linkedin.com/in/robert-anderson-034ba71b0/" style={{ textDecoration: 'none', color: "blue" }}>Robert Anderson</a></Typography>
+                            <Typography variant="h5"><a href="https://www.linkedin.com/in/robert-anderson-034ba71b0/" style={{ textDecoration: 'none', color: "lightblue" }}>Robert Anderson</a></Typography>
                             </Card>
                         </Grid>
-                        <Grid item sm={6} md={6} xs={8} style={{marginTop:16}}>
+                        <Grid item sm={6} md={6} xs={10} style={{marginTop:16}}>
                         <Card>
                             <Typography variant="h4"><NotesIcon fontSize="large"/> Resume: </Typography>
-                            <Typography variant="h5"><a href="/assets/images/robert-anderson-resume.pdf" download="Robert Anderson's Resume"target="_blank" style={{ textDecoration: 'none', color: "blue" }}>Download</a></Typography>
+                            <Typography variant="h5"><a href={process.env.PUBLIC_URL + "/assets/images/robert-anderson-resume.pdf"} download="Robert Anderson's Resume" rel="noreferrer" target="_blank" style={{ textDecoration: 'none', color: "lightblue" }}>Download</a></Typography>
                             </Card>
                         </Grid>
                 </Grid>
