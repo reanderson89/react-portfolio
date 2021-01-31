@@ -3,14 +3,17 @@ import Nav from "./components/Nav/Nav";
 import About from "./pages/about/About.jsx";
 import Contact from "./pages/contact/Contact.jsx";
 import { HashRouter, Route, Switch} from "react-router-dom";
-import { ThemeProvider} from "@material-ui/core";
+import { ThemeProvider } from "@material-ui/core";
 import theme from "./utils/theme.jsx";
+import CssBaseLine from "@material-ui/core/CssBaseline";
+
 
 
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
+      <CssBaseLine />
     <HashRouter>
     <Nav color={theme}/>
     <Switch>

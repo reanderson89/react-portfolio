@@ -9,8 +9,6 @@ import Box from '@material-ui/core/Box';
 import projects from "../../projects.json";
 import Card from "../../components/Card/Card";
 import Grid from '@material-ui/core/Grid';
-import { spacing } from '@material-ui/system'
-
 
 
 
@@ -53,7 +51,6 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     width: '100%',
-    backgroundColor: theme.palette.background.paper,
   },
 }));
 
@@ -70,12 +67,12 @@ export default function ScrollableTabsButtonAuto() {
       <Grid container zeroMinWidth alignContent="stretch" wrap="wrap">
       <Grid item xs={12}>
 <Typography variant="h3" className={classes.root} style={{textAlign: "center", color: "white", paddingTop: 10, paddingBottom: 10}} >
-Projects
+Portfolio
           </Typography>
           </Grid>
     <div className={classes.root}>
       <Grid item xs={12}>
-      <AppBar position="static" color="secondary">
+      <AppBar position="static" color="secondary" style={{marginBottom: 20}} >
         <Tabs
           value={value}
           onChange={handleChange}

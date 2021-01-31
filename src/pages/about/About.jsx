@@ -2,6 +2,9 @@ import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import { Typography, CardMedia } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
+import Box from '@material-ui/core/Box';
+
+
 
 
 
@@ -46,27 +49,29 @@ const About = ({color}) => {
     const classes = useStyles();
     
     return (
-    <Grid container  alignContent="center" className={classes.root}>
-        <Grid container spacing={2}>
-            <Grid item sm={4} xs={6}>
+    <Grid container >
+        <Grid container justify="center" style={{marginTop: 24}}>
+            <Grid item sm={4} xs={6} >
             <CardMedia
     className={classes.media}
     image="/assets/images/githubPhoto.jpeg"
     title="Robert Anderson"
 />
             </Grid>
-            <Grid item style={{marginTop: 16}} sm={8} xs={6}>
+            </Grid>
+            <Box m={2} p={2}>
+            <Grid container>
+
+            <Grid item sm={12} xs={12} >
                 <Typography align="justify" variant="p" paragraph className={classes.typo}>{aboutMe}
                     </Typography> 
             </Grid>
-            
-        </Grid>
-        <Grid container justify="flex-end">
-            <Grid item sm={8} xs={6}>
-                <Typography align="justify" variant="p" paragraph className={classes.typo}>{aboutMeCont}
+            <Grid item sm={12} xs={12} justify="flex-end">
+                <Typography  variant="p" paragraph className={classes.typo}>{aboutMeCont}
                     </Typography> 
             </Grid>
         </Grid>
+        </Box>
         
     </Grid>
     );
