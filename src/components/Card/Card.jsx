@@ -31,7 +31,7 @@ export default function MediaCard({title, repo, link, description, image, color}
       <CardActionArea color={color}>
         <CardMedia
           className={classes.media}
-          image={image}
+          image={process.env.PUBLIC_URL+image}
           title={title}
         />
         <CardContent color={color}>

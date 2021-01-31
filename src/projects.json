@@ -1,48 +1,48 @@
 [{
-    "id": 1,
-    "title": "BarkMatch",
-    "image": "/assets/images/BarkMatchMobile.gif",
-    "repository": "https://github.com/reanderson89/BarkMatch-project2",
-    "liveLink": "https://vast-river-69240.herokuapp.com/",
-    "description": "Words and words and words and words and words"
-    },
-    {
-      "id": 2,
-      "title": "Search-U",
-      "image": "/assets/images/largerGifs/searchUcomp.gif",
-      "repository": "https://github.com/reanderson89/searchu-project1",
-      "liveLink": "https://reanderson89.github.io/searchu-project1/",
-      "description": "Words and words and words and words and words"
-    },
-    {
-      "id": 3,
-      "title": "Employee Directory",
-      "image": "/assets/images/largerGifs/emp-dir.gif",
-      "repository": "https://github.com/reanderson89/employee-directory",
-      "liveLink": "https://reanderson89.github.io/employee-directory/",
-      "description": "Words and words and words and words and words"
-    },
-    {
-      "id": 4,
-      "title": "Weather Dashboard",
-      "image": "/assets/images/largerGifs/weatherDB.gif",
-      "repository": "https://github.com/reanderson89/weather-dashboard",
-      "liveLink": "https://reanderson89.github.io/weather-dashboard/",
-      "description": "Words and words and words and words and words"
-    },
-    {
-      "id": 5,
-      "title": "Note Taker",
-      "image": "/assets/images/largerGifs/note-taker.gif",
-      "repository": "https://github.com/reanderson89/note-taker",
-      "liveLink": "https://limitless-cliffs-83798.herokuapp.com/notes",
-      "description": "Words and words and words and words and words"
-    },
-    {
-      "id": 6,
-      "title": "Daily Planner",
-      "image": "/assets/images/largerGifs/planner.gif",
-      "repository": "https://github.com/reanderson89/work-day-scheduler",
-      "liveLink": "https://reanderson89.github.io/work-day-scheduler/",
-      "description": "Words and words and words and words and words"
-      }]
+  "id": 1,
+  "title": "BarkMatch",
+  "image": "/assets/images/BarkMatchMobile.gif",
+  "repository": "https://github.com/reanderson89/BarkMatch-project2",
+  "liveLink": "https://vast-river-69240.herokuapp.com/",
+  "description": "BarkMatch is an application that allows people to easily search for dogs in shelters that they would like to take for a walk. It also has an admin side so that shelters can keep their dogs up to date."
+  },
+  {
+    "id": 2,
+    "title": "Search-U",
+    "image": "/assets/images/largerGifs/searchUcomp.gif",
+    "repository": "https://github.com/reanderson89/searchu-project1",
+    "liveLink": "https://reanderson89.github.io/searchu-project1/",
+    "description": "Search-U allows users to search for schools by city or the school name itself that they are interested in, while also taking into consideration quality of life in that area."
+  },
+  {
+    "id": 3,
+    "title": "Employee Directory",
+    "image": "/assets/images/largerGifs/emp-dir.gif",
+    "repository": "https://github.com/reanderson89/employee-directory",
+    "liveLink": "https://reanderson89.github.io/employee-directory/",
+    "description": "A one stop shop for quick and easy information about your co-workers. Co-workers are dynamically filtered based upon search and can also be sorted."
+  },
+  {
+    "id": 4,
+    "title": "Weather Dashboard",
+    "image": "/assets/images/largerGifs/weatherDB.gif",
+    "repository": "https://github.com/reanderson89/weather-dashboard",
+    "liveLink": "https://reanderson89.github.io/weather-dashboard/",
+    "description": "This is a weather application that allows users to search for a city they would like. They can save it to a list so that they can check on it when they would like."
+  },
+  {
+    "id": 5,
+    "title": "Note Taker",
+    "image": "/assets/images/largerGifs/note-taker.gif",
+    "repository": "https://github.com/reanderson89/note-taker",
+    "liveLink": "https://limitless-cliffs-83798.herokuapp.com/notes",
+    "description": "Easily jot down notes and save them in one place. They can be pulled up and deleted after being created."
+  },
+  {
+    "id": 6,
+    "title": "Daily Planner",
+    "image": "/assets/images/largerGifs/planner.gif",
+    "repository": "https://github.com/reanderson89/work-day-scheduler",
+    "liveLink": "https://reanderson89.github.io/work-day-scheduler/",
+    "description": "A planner that changes colors depending on if the hour has passed or not. Users can save notes for each hour to plan out their day."
+    }]

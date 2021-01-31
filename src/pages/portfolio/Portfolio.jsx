@@ -1,20 +1,16 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { makeStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Tabs from '@material-ui/core/Tabs';
-import Tab from '@material-ui/core/Tab';
-import Typography from '@material-ui/core/Typography';
-import Box from '@material-ui/core/Box';
+import React from "react";
+import PropTypes from "prop-types";
+import { makeStyles } from "@material-ui/core/styles";
+import AppBar from "@material-ui/core/AppBar";
+import Tabs from "@material-ui/core/Tabs";
+import Tab from "@material-ui/core/Tab";
+import Typography from "@material-ui/core/Typography";
+import Box from "@material-ui/core/Box";
 import projects from "../../projects.json";
 import Card from "../../components/Card/Card";
-import Grid from '@material-ui/core/Grid';
-
-
-
+import Grid from "@material-ui/core/Grid";
 
 function TabPanel(props) {
-
   const { children, value, index, ...other } = props;
 
   return (
@@ -43,14 +39,14 @@ TabPanel.propTypes = {
 function a11yProps(index) {
   return {
     id: `scrollable-auto-tab-${index}`,
-    'aria-controls': `scrollable-auto-tabpanel-${index}`,
+    "aria-controls": `scrollable-auto-tabpanel-${index}`,
   };
 }
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    width: '100%',
+    width: "100%",
   },
 }));
 
@@ -64,52 +60,64 @@ export default function ScrollableTabsButtonAuto() {
 
   return (
     <Box>
-      <Grid container zeroMinWidth alignContent="stretch" wrap="wrap">
-      <Grid item xs={12}>
-<Typography variant="h3" className={classes.root} style={{textAlign: "center", color: "white", paddingTop: 10, paddingBottom: 10}} >
-Portfolio
+      <Grid container alignContent="stretch" wrap="wrap">
+        <Grid item xs={12}>
+          <Typography
+            variant="h3"
+            className={classes.root}
+            style={{
+              textAlign: "center",
+              color: "white",
+              paddingTop: 10,
+              paddingBottom: 10,
+            }}
+          >
+            Portfolio
           </Typography>
+        </Grid>
+        <div className={classes.root}>
+          <Grid item xs={12}>
+            <AppBar
+              position="static"
+              color="secondary"
+              style={{ marginBottom: 20 }}
+            >
+              <Tabs
+                value={value}
+                onChange={handleChange}
+                indicatorColor="primary"
+                textColor="primary"
+                variant="scrollable"
+                scrollButtons="auto"
+                aria-label="scrollable auto tabs example"
+              >
+                {projects.map((project, i) => (
+                  <Tab
+                    label={project.title}
+                    {...a11yProps(i)}
+                    key={project.id}
+                  />
+                ))}
+              </Tabs>
+            </AppBar>
           </Grid>
-    <div className={classes.root}>
-      <Grid item xs={12}>
-      <AppBar position="static" color="secondary" style={{marginBottom: 20}} >
-        <Tabs
-          value={value}
-          onChange={handleChange}
-          indicatorColor="primary"
-          textColor="primary"
-          variant="scrollable"
-          scrollButtons="auto"
-          aria-label="scrollable auto tabs example"
-          centered
-        >
-           {projects.map((project, i) => (
-            <Tab label={project.title} {...a11yProps(i)} key={project.id} />
-           ))} 
-        </Tabs>
-      </AppBar>
+          <Grid item xs={12}>
+            {projects.map((project, i) => (
+              <TabPanel className={classes.panel} value={value} index={i}>
+                <Card
+                  color="primary"
+                  key={project.id}
+                  title={project.title}
+                  repo={project.repository}
+                  link={project.liveLink}
+                  description={project.description}
+                  image={project.image}
+                />
+              </TabPanel>
+            ))}
+          </Grid>
+        </div>
       </Grid>
-      <Grid item xs={12}>
-      {projects.map((project, i) => (
-        <TabPanel  
-        className={classes.panel} 
-        value={value} 
-        index={i}>
-            <Card
-            color="primary"
-            key={project.id}
-                title={project.title} 
-               repo={project.repository} 
-               link={project.liveLink} 
-               description={project.description} 
-               image={project.image} />
-         </TabPanel>
-        
-      ))}
-      </Grid>
-    </div>
-    </Grid>
     </Box>
   );
-
 }

@@ -51,10 +51,10 @@ const About = ({color}) => {
     return (
     <Grid container >
         <Grid container justify="center" style={{marginTop: 24}}>
-            <Grid item sm={4} xs={6} >
+            <Grid item sm={3} xs={6} >
             <CardMedia
     className={classes.media}
-    image="/assets/images/githubPhoto.jpeg"
+    image={process.env.PUBLIC_URL + "/assets/images/githubPhoto.jpeg"}
     title="Robert Anderson"
 />
             </Grid>
@@ -63,11 +63,11 @@ const About = ({color}) => {
             <Grid container>
 
             <Grid item sm={12} xs={12} >
-                <Typography align="justify" variant="p" paragraph className={classes.typo}>{aboutMe}
+                <Typography paragraph className={classes.typo}>{aboutMe}
                     </Typography> 
             </Grid>
-            <Grid item sm={12} xs={12} justify="flex-end">
-                <Typography  variant="p" paragraph className={classes.typo}>{aboutMeCont}
+            <Grid item sm={12} xs={12} >
+                <Typography paragraph className={classes.typo}>{aboutMeCont}
                     </Typography> 
             </Grid>
         </Grid>

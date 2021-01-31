@@ -59,7 +59,7 @@ const Contact = () => {
                         <Grid item sm={6} md={6} xs={8} style={{marginTop:16}}>
                         <Card>
                             <Typography variant="h4"><NotesIcon fontSize="large"/> Resume: </Typography>
-                            <Typography variant="h5"><a href="./assets/robert-anderson-resume.pdf" download="Robert Anderson's Resume"target="_blank" style={{ textDecoration: 'none', color: "blue" }}>Download</a></Typography>
+                            <Typography variant="h5"><a href="/assets/images/robert-anderson-resume.pdf" download="Robert Anderson's Resume"target="_blank" style={{ textDecoration: 'none', color: "blue" }}>Download</a></Typography>
                             </Card>
                         </Grid>
                 </Grid>
