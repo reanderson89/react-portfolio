@@ -8,19 +8,9 @@ import Box from '@material-ui/core/Box';
 
 
 
-const aboutMe = `After coaching Crossfit for roughly 8 years I wanted to try and
-change up my overall career focus. Though I love coaching I wanted
-to challenge myself to learn something that is very foreign and new
-to me. That is why I am here. When I entered the Georgia Tech
-BootCamp I had zero working knowledge of anything I was getting
-into, and though that was terrifying it was also very intriguing. I
-am giving myself a chance to grow and struggle and I believe I will
-be much better for it in the end. I believe that my years spent as a
-coach will help me communicate with others and give and receive
-criticism in an effective manner. I really enjoy working with others
-and look forward to get started on some cool and fun projects.`
+const aboutMe = `Recent graduate from Georgia Tech's Full Stack Web Development Program. I have worked remotely with different groups of people to develop 3 applications using agile methodology. One of them was focused on the use of API's and the other 2 were focused on being full stack applications that ended with the final application being MERN stack. Front end is really where I have found enjoyment in coding, specifically using React. Throughout the program I have enjoyed the struggle of learning something new and also being able to help others succeed. Almost 9 years of Coaching Crossfit has helped to hone in my communication and leadership skills and has allowed me to do the thing I really enjoy most, which is helping others realize that they are capable of more then they believe.`
 
-const aboutMeCont = `Outside of jumping headfirst into uncharted territory, I find that
+const aboutMeCont = `Outside of programming I find that
 the things I enjoy most are very simple. I like to spend time with
 my wife who is a bada$$ nurse. We have two "classy ladies" (senior
 dogs) who we are very grateful have kept happy and healthy through
@@ -29,8 +19,8 @@ spend hours at home cooking and watching netflix. Though I would
 call myself a homebody I do like to go and hangout with friends
 either at someones house, a restaurant, brewery, park, maybe even
 playing some tennis or golf (sports I suck at, but enjoy sucking
-at).
-`
+at).`
+
 const useStyles = makeStyles((theme) => ({
     root: {
       flexGrow: 1,
