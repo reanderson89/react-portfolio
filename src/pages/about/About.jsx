@@ -8,9 +8,9 @@ import Box from '@material-ui/core/Box';
 
 
 
-const aboutMe = `My name is Robert Anderson, I have worked remotely with different groups of people to develop 3 applications using agile methodology. "Search-U" uses multilpe API's to create a search function to find quality of life scores near colleges. The other 2 are full stack applications, one being "BarkMatch" that helps dog shelters find dog walking volunteers and "Farm to Table" that creates an e-commerce for local farmers to have easier access to sales in their community.`
+const aboutMe = `My name is Robert Anderson. I am currently a Full Stack Web Instructor teaching mainly Java and Javascript and a handful of the other technologies that come with them to cohorts of 50+ students from broad and diverse backgrounds. `
 
-const aboutMeCont = `Front-end development is really where I have found enjoyment in coding, specifically using React. Throughout the program I have enjoyed the struggle of learning something new and also being able to help others succeed. Almost 9 years of Coaching Crossfit has helped to hone in my communication and leadership skills and has allowed me to do the thing I really enjoy most, which is helping others realize that they are capable of more then they believe.`
+const aboutMeCont = `Teaching has always been a passion for me because there is real joy in creating success for others and because it pushes me to constantly learn and develop new skills. The more I learn about development the more I realize how much I don't know, and that thought excites me to the possibilities of what I can learn next.`
 
 const useStyles = makeStyles((theme) => ({
     root: {
