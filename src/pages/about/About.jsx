@@ -41,15 +41,18 @@ const About = ({color}) => {
             </Grid>
             </Grid>
             <Box m={2} p={2}>
-            <Grid container>
+            <Grid container   direction="column"
+  alignItems="center"
+  >
 
-            <Grid item sm={12} xs={12} >
+            <Grid item sm={6} xs={6} >
                 <Typography paragraph className={classes.typo}>{aboutMe}
                     </Typography> 
-            </Grid>
-            <Grid item sm={12} xs={12} >
-                <Typography paragraph className={classes.typo}>{aboutMeCont}
+                    <Typography paragraph className={classes.typo}>{aboutMeCont}
                     </Typography> 
+            </Grid>
+            <Grid item sm={6} xs={6} >
+                
             </Grid>
         </Grid>
         </Box>
